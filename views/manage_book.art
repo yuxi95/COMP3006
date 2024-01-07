@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div>
+    <a href="/books/to_add_book">Add Book</a>
+</div>
+    <div class="manage-books">
+        <table>
+            <thead>
+            <tr>
+                <th>No</th>
+                <th>Title</th>
+                <th>Type</th>
+                <th>Author</th>
+                <th>Publisher</th>
+                <th>Status</th>
+                <th>Option</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{each list}}
+            <tr>
+                <td>{{$value.no}}</td>
+                <td>{{$value.title}}</td>
+                <td>{{$value.type}}</td>
+                <td>{{$value.author}}</td>
+                <td>{{$value.publisher}}</td>
+                <td>{{$value.status}}</td>
+                <td><a href="/books/delete">delete</a> | <a href="#">booking</a> </td>
+            </tr>
+            {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+    <form>
+    </form>
+</body>
+</html>

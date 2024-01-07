@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div class="users_list">
+    <table>
+        <thead>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>StudentId</th>
+            <th>Academy</th>
+            <th>Mobile Phone</th>
+            <th>Status</th>
+            <th>Option</th>
+        </tr>
+        </thead>
+        <tbody>
+<!--        {{each list}}-->
+<!--        <tr>-->
+<!--            <td>{{$value.no}}</td>-->
+<!--            <td>{{$value.title}}</td>-->
+<!--            <td>{{$value.type}}</td>-->
+<!--            <td>{{$value.author}}</td>-->
+<!--            <td>{{$value.publisher}}</td>-->
+<!--            <td>{{$value.publisher}}</td>-->
+<!--            <td><a href="#">borrow</a> | <a href="#">booking</a> | <a href="#">return</a></td>-->
+<!--        </tr>-->
+<!--        {{/each}}-->
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

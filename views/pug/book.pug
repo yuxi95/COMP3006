@@ -1,0 +1,70 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        style
+
+    body
+        h2(style='text-align: center') ******************** Welcome to Books Management System ******************
+        center
+            table(class="book_list")
+                thead
+                    tr
+                        th No
+                        th Title
+                        th Type
+                        th Writer
+                        th Publisher
+                        th Option
+                - let values = [1,2,3,4,5];
+                - let titles = ['高等数学','线性代数','大学英语','机器学习','计算机网络'];
+                tbody
+                each val in values
+                    tr
+                        td
+                            label=val
+                        td
+                        td
+                        td
+                        td
+
+                //tr
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //tr
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //tr
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //tr
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //tr
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+                //    td
+
+
+        block content

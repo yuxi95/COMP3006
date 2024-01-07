@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div>
+    <h1>User Information</h1>
+    <table>
+        <tr>
+            <th>Name:</th>
+            <td>{{user.name}}</td>
+        </tr>
+        <tr>
+            <th>Username:</th>
+            <td>{{user.username}}</td>
+        </tr>
+        <tr>
+            <th>StudentID:</th>
+            <td>{{user.student_id}}</td>
+        </tr>
+        <tr>
+            <th>Academy:</th>
+            <td>{{user.academy}}</td>
+        </tr>
+        <tr>
+            <th>MobilePhone:</th>
+            <td>{{user.mobile_phone}}</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.title{
+    text-align: center;
+    background: turquoise;
+    height: 80px;
+    line-height: 80px;
+    font-size: 24px;
+}
+.book_list{
+    background: aliceblue;
+}
+.book_list td,th{
+    border-left: 1px solid lightsalmon;
+    border-bottom: 1px solid grey;
+}
+.book_list table{
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.register table{
+    text-align: left;
+    margin: 0px auto;
+}
+.register td{
+    font-size: 18px;
+}
+.form-group{
+    text-align: left;
+}
+.manage-users{
+    background: aliceblue;
+}
+.manage-users td,th{
+    border-left: 1px solid lightsalmon;
+    border-bottom: 1px solid grey;
+}
+.manage-users table{
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.manage-books{
+    background: aliceblue;
+}
+.manage-books td,th{
+    border-left: 1px solid lightsalmon;
+    border-bottom: 1px solid grey;
+}
+.manage-books table{
+    align-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 0px auto;
+}
+.topbar {
+    position: fixed;
+    top: 8px;
+    right: 0;
+    width: 100px;
+    /*background-color: #333;*/
+}
+
+.dropdown-toggle {
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+}
+
+.dropdown-menu li {
+    /*margin: 10px 0;*/
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}

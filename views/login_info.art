@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div>
+    <h2>Login Information</h2>
+    <p>Username: <span id="username"></span></p>
+    <p>mobile phone: <span id="mobile_phone"></span></p>
+<!--    <img id="avatar" src="avatar.png" alt="Avatar">-->
+</div>
+<script>
+    // 这里只是一个示例，实际应用中，您需要从 session 中获取用户信息
+    const user = {
+        id: 1,
+        username: 'user1',
+        email: 'user1@example.com',
+        avatar: 'avatar.png'
+    };
+
+    document.getElementById('username').innerText = user.username;
+    document.getElementById('email').innerText = user.email;
+    document.getElementById('avatar').src = user.avatar;
+</script>
+</body>
+</html>

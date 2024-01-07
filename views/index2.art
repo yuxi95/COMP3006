@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/javascripts/topbar.js"></script>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+    <div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+<!--        <span>{{username}}</span>-->
+
+    </div>
+    <div>
+        <a href="/books/to_add_book">Add Book</a>
+    </div>
+    <div class="topbar">
+        <button  class="dropdown-toggle"  onclick="showMenu()">username:{{username}}</button>
+        <ul class="dropdown-menu"  >
+            <li><a href="/users/logout">登出</a></li>
+            <li><a href="#">修改用户信息</a></li>
+            <li><a href="/users/borrow-records">查看借阅记录</a></li>
+        </ul>
+    </div>
+    <div class="book_type">
+        <a href="/books/list">all</a>
+        <a href="/books/list?type=math">math</a>
+        <a href="/books/list?type=history">history</a>
+        <a href="/books/list?type=computer">computer</a>
+        <a href="/books/list?type=literary">literary</a>
+        <a href="/books/list?type=novel">novel</a>
+    </div>
+    <div class="search-box">
+        <form class="search-form" action="/books/search" method="get">
+            <label>
+                <input type="text" name="search_query" placeholder="Search books...">
+            </label>
+            <input type="submit" value="Search">
+        </form>
+    </div>
+    <div class="book_list">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Title</th>
+                    <th>Type</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Status</th>
+                    <th>Option</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{each list}}
+                <tr>
+                    <td>{{$value.no}}</td>
+                    <td>{{$value.title}}</td>
+                    <td>{{$value.type}}</td>
+                    <td>{{$value.author}}</td>
+                    <td>{{$value.publisher}}</td>
+                    <td>{{$value.status}}</td>
+                    <td><a href="/borrowing/borrow?no={{$value.no}}&title={{$value.title}}">borrow</a> | <a href="#">booking</a> | <a href="/borrowing/return?no={{$value.no}}&title={{$value.title}}">return</a></td>
+                    </tr>
+                {{/each}}
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

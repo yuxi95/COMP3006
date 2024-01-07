@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <script src="/javascripts/form.js"></script>
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--        <span>{{username}}</span>-->
+
+</div>
+<form class="login-form" action="/users/login" method="post">
+    <table>
+        <tr>
+            <td><label>username :</label></td>
+            <td>
+                <label>
+                    <input type="text" name="username"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><label>password :</label></td>
+            <td>
+                <label>
+                    <input type="password" name="password"/>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <input type="radio" name="role" value="user" checked/> user
+                </label>
+            </td>
+            <td>
+                <label>
+                    <input type="radio" name="role" value="admin"/> admin
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>
+                    <input type="submit" value="login"/>
+                </label>
+            </td>
+            <td>
+                <label>
+                    <input type="button" value="clear" onclick="clearForm()" />
+                </label>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

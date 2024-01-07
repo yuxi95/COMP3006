@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div class="manage-users">
+    <table>
+        <thead>
+        <tr>
+            <th>No</th>
+            <th>Username</th>
+            <th>Name</th>
+            <th>StudentID</th>
+            <th>MobilePhone</th>
+            <th>Academy</th>
+            <th>Option</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{each list}}
+        <tr>
+            <td>{{$value._id}}</td>
+            <td>{{$value.username}}</td>
+            <td>{{$value.name}}</td>
+            <td>{{$value.student_id}}</td>
+            <td>{{$value.mobile_phone}}</td>
+            <td>{{$value.academy}}</td>
+            <td><a href="/users/info?username={{$value.username}}">user-info</a> | <a href="/users/edit?username={{$value.username}}">edit-user</a> | <a href="/users/reset-password?username={{$value.username}}">reset-password</a></td>
+        </tr>
+        {{/each}}
+
+        </tbody>
+    </table>
+</div>
+<form>
+</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div class="register">
+    <form action="/users/register" method="post" >
+        <table>
+            <tr>
+                <td><label>username :</label></td>
+                <td>
+                    <label>
+                        <input type="text" name="username"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>password :</label></td>
+                <td>
+                    <label>
+                        <input type="password" name="password"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>repeat password :</label></td>
+                <td>
+                    <label>
+                        <input type="password" name="repeat_password"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>name :</label></td>
+                <td>
+                    <label>
+                        <input type="text" name="name"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>student ID :</label></td>
+                <td>
+                    <label>
+                        <input type="text" name="student_id"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>academy :</label></td>
+                <td>
+                    <label>
+                        <input type="text" name="academy"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>mobile phone :</label></td>
+                <td>
+                    <label>
+                        <input type="text" name="mobile_phone"/>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        <input type="submit" value="register"/>
+                    </label>
+                </td>
+                <td>
+                    <label>
+                        <input type="button" value="clear"/>
+                    </label>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

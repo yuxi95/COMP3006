@@ -1,0 +1,80 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        h2(style='text-align: center') ******************** Welcome to Books Management System ******************
+        center
+            form
+                table
+                    tr
+                        td
+                            label 账号:
+                        td
+                            input(
+                                type='text'
+                                name='username'
+                            )
+                    tr
+                        td
+                            label 密码
+                        td
+                            input(
+                                type='password'
+                                name='password'
+                            )
+                    tr
+                        td
+                            label 确认密码
+                        td
+                            input(
+                                type='password'
+                                name='repeat_password'
+                            )
+                    tr
+                        td
+                            label 姓名
+                        td
+                            input(
+                                type='text'
+                                name='name'
+                            )
+                    tr
+                        td
+                            label 学号
+                        td
+                            input(
+                                type='text'
+                                name='sno'
+                            )
+                    tr
+                        td
+                            label 学院
+                        td
+                            input(
+                                type='text'
+                                name='academy'
+                            )
+                    tr
+                        td
+                            label 电话
+                        td
+                            input(
+                                type='text'
+                                name='tel'
+                            )
+                    tr
+                        td
+                            input(
+                                type='submit'
+                                value='完成注册'
+                            )
+                        td
+                            input(
+                                type='button'
+                                value='清空所填'
+                            )
+
+        block content

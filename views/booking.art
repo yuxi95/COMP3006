@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+<div class="users_list">
+    <table>
+        <thead>
+        <tr>
+            <th>Book No</th>
+            <th>Username</th>
+            <th>Booking Date</th>
+            <th>Booking Return Date</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Booking Sequence Number</th>
+            <th>Option</th>
+        </tr>
+        </thead>
+        <tbody>
+                {{each list}}
+                <tr>
+                    <td>{{$value.no}}</td>
+                    <td>{{$value.username}}</td>
+                    <td>{{$value.booking_date}}</td>
+                    <td>{{$value.booking_return}}</td>
+                    <td>{{$value.title}}</td>
+                    <td>{{$value.author}}</td>
+                    <td>{{$value.booking_seq}}</td>
+                    <td><a href="/booking/cancel?no={{$value.no}}&username={{$value.username}}">cancel booking</a> </td>
+        <!--        </tr>-->
+                {{/each}}
+
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>

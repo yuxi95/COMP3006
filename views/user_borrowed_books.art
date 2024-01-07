@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>title</title>
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+    <form>
+    </form>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Book ID</th>
+            <th>Borrow Date</th>
+            <th>Return Date</th>
+        </tr>
+        <tr>
+            <td>隐藏的ID列</td>
+            <td>书名</td>
+            <td>书ID列</td>
+            <td>开始借阅时间</td>
+            <td>约定归还时间</td>
+        </tr>
+        <tr>
+            <td>隐藏的ID列</td>
+            <td>书名</td>
+            <td>书ID列</td>
+            <td>开始借阅时间</td>
+            <td>约定归还时间</td>
+        </tr>
+        <tr>
+            <td>隐藏的ID列</td>
+            <td>书名</td>
+            <td>书ID列</td>
+            <td>开始借阅时间</td>
+            <td>约定归还时间</td>
+        </tr>
+    </table>
+</body>
+</html>

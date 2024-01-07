@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Book</title>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+</head>
+<body>
+<div class="title">Book Management System    <a href="/books/list">Index</a>        <a href="/users/login-page">sign in</a>       <a href="/users/register-page">register</a>
+    <!--    <span>{{username}}</span>-->
+
+</div>
+
+    <div>Add Book</div>
+    <form action="/books/add_book" method="post">
+        <div class="form-group">
+            <label>title: </label>
+            <label>
+                <input type="text" name="title"/>
+            </label><br>
+        </div>
+        <div class="form-group">
+            <label>type: </label>
+            <label>
+                <input type="text" name="type"/>
+            </label><br>
+        </div>
+        <div class="form-group">
+            <label>author: </label>
+            <label>
+                <input type="text" name="author"/>
+            </label><br>
+        </div>
+        <div class="form-group">
+            <label>publisher: </label>
+            <label>
+                <input type="text" name="publisher"/>
+            </label><br>
+        </div>
+        <button type="submit" value="submit"> submit </button>
+    </form>
+</body>
+</html>
